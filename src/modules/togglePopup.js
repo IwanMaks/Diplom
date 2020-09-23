@@ -9,7 +9,7 @@ const togglePopup = () => {
             if (body.clientWidth > 576) {
                 popupDialogMenu.style.right = '639px';
             } else {
-                popupDialogMenu.style.top = '841px';
+                popupDialogMenu.style.top = '705px';
             }
         }
         if (target.classList.contains('close-menu') ||

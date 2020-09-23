@@ -6,11 +6,11 @@ const toggleNumber = () => {
     headerContactsArrow.addEventListener('click', () => {
         if (!headerContactsPhoneNumber.style.opacity || headerContactsPhoneNumber.style.opacity === '0') {
             headerContactsArrowImg.style.transform = 'rotate(180deg)';
-            headerContactsPhoneNumberAccord.style.position = 'static';
+            headerContactsPhoneNumberAccord.style.top = '30px';
             headerContactsPhoneNumber.style.opacity = '1';
         } else {
             headerContactsArrowImg.style.transform = 'rotate(0)';
-            headerContactsPhoneNumberAccord.style.position = 'absolute';
+            headerContactsPhoneNumberAccord.style.top = '0';
             headerContactsPhoneNumber.style.opacity = '0';
         }
     });
