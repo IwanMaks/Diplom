@@ -1,5 +1,11 @@
 'use strict';
 
-import start from './modules/start';
+import toggleNumber from './modules/toggleNumber';
+import togglePopup from './modules/togglePopup';
+import scroll from './modules/scroll';
+import toggleRepairTypes from './modules/toggleRepairTypes';
 
-start();
+toggleNumber();
+togglePopup();
+scroll();
+toggleRepairTypes();
