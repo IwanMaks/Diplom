@@ -1,14 +1,11 @@
 const toggleFormula = () => {
-    const formulaItemIconInnerText = document.querySelectorAll('.formula-item__icon-inner-text');
-
-    formulaItemIconInnerText.forEach(item => {
-        const formulaItemPopup = document.querySelector(`.formula-item-popup-${item.textContent}`);
-        item.addEventListener('mouseover', event => {
-            formulaItemPopup.style.visibility = 'visible';
-            formulaItemPopup.style.opacity = '1';
+    const formulaItemIcon = document.querySelectorAll('.formula-item__icon');
+    formulaItemIcon.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.classList.add('active-item');
         });
-        item.addEventListener('mouseout', event => {
-            formulaItemPopup.style.visibility = 'hidden';
+        item.addEventListener('mouseout', () => {
+            item.classList.remove('active-item');
         });
     });
 };

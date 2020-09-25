@@ -6,6 +6,9 @@ import scroll from './modules/scroll';
 import toggleRepairTypes from './modules/toggleRepairTypes';
 import togglePrivacy from './modules/togglePrivacy';
 import toggleFormula from './modules/toggleFormula';
+import sliderFormula from './modules/sliderFormula';
+import masksNumber from './modules/masksNumber';
+import sendForms from './modules/sendForms';
 
 toggleNumber();
 togglePopup();
@@ -13,3 +16,6 @@ scroll();
 toggleRepairTypes();
 togglePrivacy();
 toggleFormula();
+sliderFormula();
+masksNumber();
+sendForms();

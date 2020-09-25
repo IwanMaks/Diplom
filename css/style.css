@@ -5829,7 +5829,7 @@ div.wave-block:nth-child(17):after {
     color: #FFFFFF;
     background: -webkit-gradient(linear, left top, right top, from(#F48922), to(#FFB015));
     background: linear-gradient(90deg, #F48922 0%, #FFB015 100%); }
-  .active-item .formula-item__icon span {
+  .active-item .formula-item__icon-inner-text   {
     color: #FFFFFF; }
   .active-item .formula-item-popup {
     visibility: visible;
