@@ -9,6 +9,7 @@ const renderPopup = () => {
         `;
         document.head.append(style);
     };
+    //TODO: [DIP-5] Try it
     const render = response => {
         addStyles();
         let navListPopupRepair = document.querySelector('.nav-list-popup-repair');
