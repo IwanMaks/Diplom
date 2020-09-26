@@ -1,6 +1,13 @@
 const sliderFormula = () => {
     const formulaSlider = document.querySelector('.formula-slider');
     const formulaSliderSlide = document.querySelectorAll('.formula-slider__slide');
+    const wrap = document.querySelector(".formula-slider-wrap");
+
+    wrap.style.display = 'inline';
+    formulaSlider.style.display = 'flex';
+    wrap.style.height = '405px';
+    wrap.style.overflow = 'hidden';
+    
 
     let currentSlide = 0;
     let interval;

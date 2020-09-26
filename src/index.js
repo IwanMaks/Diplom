@@ -10,6 +10,9 @@ import sliderFormula from './modules/sliderFormula';
 import masksNumber from './modules/masksNumber';
 import sendForms from './modules/sendForms';
 import renderPopup from './modules/renderPopup';
+//import mobileFormulaSlider from './modules/mobileFormulaSlider';
+import sliderRepair from './modules/sliderRepair';
+import tabsWork from './modules/tabsWork';
 
 toggleNumber();
 togglePopup();
@@ -21,3 +24,6 @@ sliderFormula();
 masksNumber();
 sendForms();
 renderPopup();
+//mobileFormulaSlider();
+sliderRepair();
+tabsWork();
