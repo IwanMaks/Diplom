@@ -13,6 +13,8 @@ import renderPopup from './modules/renderPopup';
 //import mobileFormulaSlider from './modules/mobileFormulaSlider';
 import sliderRepair from './modules/sliderRepair';
 import tabsWork from './modules/tabsWork';
+import accordion from './modules/accordion';
+import toggleCosalt from './modules/toggleConsultation';
 
 toggleNumber();
 togglePopup();
@@ -27,3 +29,5 @@ renderPopup();
 //mobileFormulaSlider();
 sliderRepair();
 tabsWork();
+accordion();
+toggleCosalt();
