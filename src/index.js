@@ -15,6 +15,7 @@ import sliderRepair from './modules/sliderRepair';
 import tabsWork from './modules/tabsWork';
 import accordion from './modules/accordion';
 import toggleCosalt from './modules/toggleConsultation';
+import sliderPortfolio from './modules/sliderPortfolio';
 
 toggleNumber();
 togglePopup();
@@ -31,3 +32,4 @@ sliderRepair();
 tabsWork();
 accordion();
 toggleCosalt();
+sliderPortfolio();
