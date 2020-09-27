@@ -16,6 +16,8 @@ import tabsWork from './modules/tabsWork';
 import accordion from './modules/accordion';
 import toggleCosalt from './modules/toggleConsultation';
 import sliderPortfolio from './modules/sliderPortfolio';
+import sliderRewievs from './modules/sliderRewievs';
+import docTabs from './modules/docTabs';
 
 toggleNumber();
 togglePopup();
@@ -33,3 +35,5 @@ tabsWork();
 accordion();
 toggleCosalt();
 sliderPortfolio();
+sliderRewievs();
+docTabs();
