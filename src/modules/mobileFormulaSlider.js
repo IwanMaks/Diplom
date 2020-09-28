@@ -59,9 +59,9 @@ const mobileFormulaSlider = () => {
         active.classList.add("active-item");
         active.style.display = "inline-block";
 
-        wrap.children[0].append(leftSlide);
-        wrap.children[0].append(active);
-        wrap.children[0].append(rightSlide);
+        wrap.children[0].appendChild(leftSlide);
+        wrap.children[0].appendChild(active);
+        wrap.children[0].appendChild(rightSlide);
     };
 
     slides.forEach((item) => {

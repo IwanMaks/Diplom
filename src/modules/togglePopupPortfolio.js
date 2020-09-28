@@ -48,14 +48,16 @@ const togglePopupPortfolio = () => {
     };
 
     document.body.addEventListener('click', event => {
-        if (event.target.closest('.link-list-designs')) {
+        if (event.target.closest('.link-list-designs') || event.target.closest('.portfolio-slider__slide-frame')) {
             popupPortfolio.style.visibility = 'visible';
             startSlide();
         }
-        if (!event.target.closest('.popup-dialog-portfolio') && !event.target.closest('.link-list-designs') ||
-            event.target.closest('.close ')) {
-            popupPortfolio.style.visibility = 'hidden';
-            stopSlide();
+        if (!event.target.closest('.portfolio-slider__slide-frame')) {
+            if (!event.target.closest('.popup-dialog-portfolio') && !event.target.closest('.link-list-designs') ||
+                event.target.closest('.close ')) {
+                popupPortfolio.style.visibility = 'hidden';
+                stopSlide();
+            }
         }
 
         prevSlide(popupPortfolioSliderSlide, popupPortfolioText, currentSlide);

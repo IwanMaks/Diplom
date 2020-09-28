@@ -1,5 +1,13 @@
 'use strict';
 
+import 'nodelist-foreach-polyfill';
+import elementClosest from 'element-closest';
+import "@babel/polyfill";
+import 'fetch-polyfill';
+import 'ie11-scroll-into-view';
+import 'cross-browser-polyfill';
+elementClosest(window);
+
 import toggleNumber from './modules/toggleNumber';
 import togglePopup from './modules/togglePopup';
 import scroll from './modules/scroll';
@@ -19,6 +27,7 @@ import sliderPortfolio from './modules/sliderPortfolio';
 import sliderRewievs from './modules/sliderRewievs';
 import docTabs from './modules/docTabs';
 import togglePopupPortfolio from './modules/togglePopupPortfolio';
+import sliderPortfolioTwo from './modules/sliderPorfolioTwo';
 
 
 toggleNumber();
@@ -40,3 +49,4 @@ sliderPortfolio();
 sliderRewievs();
 docTabs();
 togglePopupPortfolio();
+sliderPortfolioTwo();

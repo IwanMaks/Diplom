@@ -7,7 +7,7 @@ const renderPopup = () => {
                 border: 3px solid #c05d00!important;
             }
         `;
-        document.head.append(style);
+        document.head.appendChild(style);
     };
     //TODO: [DIP-5] Try it
     const render = response => {
@@ -34,7 +34,7 @@ const renderPopup = () => {
                 elem.classList.add('active-list');
                 const popupRepairTypesContentTableList = document.querySelector('.popup-repair-types-content-table__list');
                 popupRepairTypesContentTableList.textContent = '';
-                popupRepairTypesContentTableList.append(document.createElement('tbody'));
+                popupRepairTypesContentTableList.appendChild(document.createElement('tbody'));
                 const tbody = popupRepairTypesContentTableList.querySelector('tbody');
                 let list;
                 response.forEach(item => {

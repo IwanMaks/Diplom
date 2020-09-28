@@ -11,6 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.11.5",
+    "cross-browser-polyfill": "^1.0.5",
+    "element-closest": "^3.0.2",
+    "fetch-polyfill": "^0.8.2",
+    "ie11-scroll-into-view": "^1.0.2",
+    "nodelist-foreach-polyfill": "^1.2.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
