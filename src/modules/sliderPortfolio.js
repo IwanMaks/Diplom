@@ -28,7 +28,21 @@ const sliderPortfolio = () => {
             designsSliderStyleSlide = designSlide.querySelectorAll('.designs-slider__style-slide');
             designsSliderWrap.querySelector('.visible').classList.remove('visible');
             previewBlock[index].classList.add('visible');
+            previewBlockItem.forEach((elem, index) => {
+                elem.removeEventListener('click', () => {
+                    prevSlide(designsSliderStyleSlide, previewBlockItem, currentSlide);
+                    currentSlide = index;
+                    nextSlide(designsSliderStyleSlide, previewBlockItem, currentSlide);
+                });
+            });
             previewBlockItem = previewBlock[index].querySelectorAll('.preview-block__item-inner');
+            previewBlockItem.forEach((elem, index) => {
+                elem.addEventListener('click', () => {
+                    prevSlide(designsSliderStyleSlide, previewBlockItem, currentSlide);
+                    currentSlide = index;
+                    nextSlide(designsSliderStyleSlide, previewBlockItem, currentSlide);
+                });
+            });
             sliderCounterContentTotal.textContent = designsSliderStyleSlide.length;
             currentSlide = 0;
             sliderCounterContentCurrent.textContent = currentSlide + 1;
@@ -63,6 +77,14 @@ const sliderPortfolio = () => {
     const stopSlide = () => {
         clearInterval(interval);
     };
+
+    previewBlockItem.forEach((elem, index) => {
+        elem.addEventListener('click', () => {
+            prevSlide(designsSliderStyleSlide, previewBlockItem, currentSlide);
+            currentSlide = index;
+            nextSlide(designsSliderStyleSlide, previewBlockItem, currentSlide);
+        });
+    });
 
     designsSliderWrap.addEventListener('click', event => {
         event.preventDefault();

@@ -18,6 +18,8 @@ import toggleCosalt from './modules/toggleConsultation';
 import sliderPortfolio from './modules/sliderPortfolio';
 import sliderRewievs from './modules/sliderRewievs';
 import docTabs from './modules/docTabs';
+import togglePopupPortfolio from './modules/togglePopupPortfolio';
+
 
 toggleNumber();
 togglePopup();
@@ -37,3 +39,4 @@ toggleCosalt();
 sliderPortfolio();
 sliderRewievs();
 docTabs();
+togglePopupPortfolio();
